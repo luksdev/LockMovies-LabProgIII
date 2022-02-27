@@ -7,8 +7,24 @@
     <title>LockMovies</title>
 </head>
 <body>
-    <header></header>
-    <section></section>
+    <header>
+        <h1>LockMovies</h1>
+    </header>
+    <section id="Home">
+        <div class="search">
+            <input type="text" id="SearchInput">
+            <input type="button" value="Search" id="ButtonSearch">
+            <br/>
+            <span>Nome do filme retidado da API:</span>
+            <p id="searchCheck"></p>
+            <span>Resultado da pesquisa: </span>
+            <ul id="SearchResult">
+                
+            </ul>
+        </div>
+    </section>
     <footer></footer>
+
+    <script type="module" src="./scripts/getMovies.js"></script>
 </body>
 </html>
