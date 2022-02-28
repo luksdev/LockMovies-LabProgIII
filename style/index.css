@@ -1,0 +1,133 @@
+/* Presets */
+button{
+    border: none;
+}
+
+.icon-button{
+    border-radius: 10px;
+    transition: 0.1s;
+}
+
+.icon-button:hover{
+    background-color: rgba(158, 158, 158, 0.199);
+    cursor: pointer;
+}
+
+.left-side li{
+    transition: 1s;
+}
+
+.left-side li:hover{
+    cursor: pointer;
+    color: rgb(228, 216, 48);
+    border-bottom: 1px solid rgb(122, 122, 122);
+}
+
+/* HEADER */
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content h1{
+    color: rgb(252, 238, 54);
+}
+
+.left-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.left-side li{
+    color: rgb(122, 122, 122);
+}
+
+.right-side{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#SearchInput{
+    border-bottom: 1px solid rgb(122, 122, 122);
+    transition: 0.5s;
+    color: rgb(122, 122, 122);
+    margin-right: 0.5rem;
+}
+
+
+#SearchInput:focus{
+    outline: none;
+    border-bottom-color: rgb(252, 238, 54);
+}
+
+.box-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main BannerMovie */
+
+.banner{
+    content: ' ';
+    background-color: black;
+    background-image: url(/src/images/peakyBanner.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    border-radius: 10px;
+    height: 30rem;
+}
+
+.text-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: none;
+    height: 95%;
+}
+
+.text-banner span{
+    background: none;
+    color: #F8F8F8;
+}
+
+.text-banner .title-banner{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.text-banner button{
+    width: 13rem;
+    height: 4rem;
+    background-color: rgb(252, 238, 54);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: 0.5s;
+    margin-left: 1%;
+}
+
+.text-banner button:hover{
+    cursor: pointer;
+    background-color: rgb(202, 192, 43);
+}
+
+.watch-now-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.watch-now-btn span{
+    color: black;
+}
+
+.button-icon-watch-now{
+    background: none;
+}

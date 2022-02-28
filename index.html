@@ -4,25 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="/style/global.css">
+    <!-- Styles Index -->
+    <link rel="stylesheet" href="/style/index.css">
     <title>LockMovies</title>
 </head>
 <body>
-    <header>
-        <h1>LockMovies</h1>
-    </header>
-    <section id="Home">
-        <div class="search">
-            <input type="text" id="SearchInput">
-            <input type="button" value="Search" id="ButtonSearch">
-            <br/>
-            <span>Nome do filme retidado da API:</span>
-            <p id="searchCheck"></p>
-            <span>Resultado da pesquisa: </span>
-            <ul id="SearchResult">
-                
+    <header class="header-content">
+        <div class="left-side">
+            <h1>LockMovies</h1>
+            <ul class="nav-bar"></ul>
+                <li>Filmes</li>
+                <li>Séries</li>
             </ul>
         </div>
-    </section>
+        <div class="right-side">
+            <div class="box-search">
+                <input type="text" id="SearchInput" placeholder="Pesquisar">
+                <img class="icon-button" src="/src/icons/search_white_24dp.svg" id="ButtonSearch" alt="icon-search"/>            
+            </div>
+            <div class="box-notification">
+                <img class="icon-button" src="/src/icons/notifications_white_24dp.svg" alt="icon-notification">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="banner-movie">
+            <div class="banner">
+                <div class="text-banner">
+                    <span class="season-banner">Temporada 1</span>
+                    <span class="title-banner">PeakyBlinders</span>
+                    <Button class="watch-now-btn">
+                        <img class="button-icon-watch-now" src="/src/icons/play_circle_filled_black_24dp.svg" alt="play-icon">
+                        <span>Assistir Agora</span>
+                    </Button>
+                </div>
+            </div>
+        </section>
+        <section id="popular">
+            <h3>Populares na LockMovies</h3>
+        </section>
+    </main>
+
     <footer></footer>
 
     <script type="module" src="./scripts/getMovies.js"></script>
