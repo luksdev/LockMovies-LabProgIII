@@ -9,6 +9,11 @@
     background-color: #252336;
 }
 
+main{
+    display: block;
+    transition: 1s;
+}
+
 h1{
     font-family: 'Poppins', sans-serif;
 }
