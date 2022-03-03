@@ -21,7 +21,7 @@ const getTitle = () => {
 
 // Realizar a pesquisa
 const search = () => {
-  const boxMovieSearch = document.getElementById('box-content-results-movies');
+  const boxMovieSearch = document.getElementById('poster-info');
 
   inputSearch.addEventListener('change', () => {
     fetch(
@@ -33,7 +33,12 @@ const search = () => {
         const mapMovies = arrayResults.map(function (movies, index) {
           console.log(movies);
           if (movies.poster_path) {
-            const poster = `<img class="poster" src="https://image.tmdb.org/t/p/original${movies.poster_path}"/>`;
+            const poster = `
+            <div id="${index}" class="poster-search">
+              <img class="poster" src="https://image.tmdb.org/t/p/original${movies.poster_path}"/>
+              <span>${movies.title}</span>
+            </div>
+            `;
             const verifyNumber = document.querySelectorAll('.poster').length;
 
             boxMovieSearch.innerHTML += poster;
@@ -43,8 +48,6 @@ const search = () => {
               boxMovieSearch.innerHTML = '';
             }
           }
-
-          // console.log(boxMovieSearch);
         });
       })
       .catch((err) => console.log(`Ocorreu um erro: ${err}`));

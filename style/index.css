@@ -137,6 +137,25 @@ button {
 
 /* Content Search */
 
+#box-content-results-movies {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: row;
+}
+
+#poster-info {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.poster-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .poster {
-  width: 100px;
+  width: 200px;
 }
