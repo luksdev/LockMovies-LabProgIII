@@ -78,7 +78,7 @@ button {
 .banner {
   content: ' ';
   background-color: black;
-  background-image: url(/src/images/peakyBanner.jpg);
+  background-image: url(src/images/peakyBanner.jpg);
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
